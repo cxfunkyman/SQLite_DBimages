@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DBimages));
             this.groupBoxAddUpload = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
@@ -188,6 +189,8 @@
             this.ClientSize = new System.Drawing.Size(673, 486);
             this.Controls.Add(this.groupBoxFetch);
             this.Controls.Add(this.groupBoxAddUpload);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DBimages";
             this.Text = "DB Images Using Sqlite";
             this.groupBoxAddUpload.ResumeLayout(false);
